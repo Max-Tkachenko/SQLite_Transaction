@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="TIme: "
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnTransaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnSimpleInsert"
+        android:layout_marginTop="15dp"
+        android:clickable="true"
+        android:onClick="insert_transaction"
+        android:text="Insert" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnTransaction"
+        android:layout_alignBottom="@+id/btnTransaction"
+        android:layout_toEndOf="@+id/btnTransaction"
+        android:layout_toRightOf="@+id/btnTransaction"
+        android:text="(transaction)" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:clickable="true"
+        android:onClick="deleteRows"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Delete rows" />
+
+    <Button
+        android:id="@+id/btnSimpleInsert"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvTime"
+        android:clickable="true"
+        android:onClick="insert_simple"
+        android:text="Insert" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnSimpleInsert"
+        android:layout_alignBottom="@+id/btnSimpleInsert"
+        android:layout_toEndOf="@+id/btnSimpleInsert"
+        android:layout_toRightOf="@+id/btnSimpleInsert"
+        android:text="(simple insert)" />
+
+    <Button
+        android:id="@+id/btnTransactionSt"
+        android:clickable="true"
+        android:onClick="insert_transactionStatement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnTransaction"
+        android:layout_marginTop="15dp"
+        android:text="Insert" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnTransactionSt"
+        android:layout_alignBottom="@+id/btnTransactionSt"
+        android:layout_toEndOf="@+id/btnTransactionSt"
+        android:layout_toRightOf="@+id/btnTransactionSt"
+        android:text="(transaction + statement)" />
+
+    <Button
+        android:id="@+id/btnInfo"
+        android:clickable="true"
+        android:onClick="showCountInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnSimpleInsert"
+        android:text="Table Info" />
+</android.widget.RelativeLayout>
